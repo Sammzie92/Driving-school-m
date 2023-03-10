@@ -1,0 +1,157 @@
+body {
+    background-color: white;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+}
+header {
+    background-image: url("images/bg01.jpg");
+    color: white;
+    background-size: cover;
+    padding: 3em;
+    text-align: center;
+    animation: slideshow 20s linear infinite;
+    margin-bottom: 0;
+
+}
+@keyframes slideshow {
+    0% {background-image: url("images/bg01.jpg")}
+    50% {background-image: url("images/bg02.jpg")}
+    75%{background-image: url("images/bg03.jpg")}
+    100%{background-image: url("images/vivid-blurred-colorful-background.jpg")}
+
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+}
+
+.h2 {
+    margin-top: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.list li{
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+input[type="text"] {
+    padding: 0.5em;
+    width: 20em;
+}
+input[type="submit"] {
+    background-color: #2980b9;
+    border: none;
+    color: white;
+    padding: 1em;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+footer {
+    background-color: lemonchiffon;
+    animation: hue-shift 30s linear infinite;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    background-size: 600% 100%;
+
+}
+@keyframes hue-shift {
+    0% {background-color: rebeccapurple;}
+    50%{background-color: indianred}
+    100%{background-color: ghostwhite}
+
+}
+.icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.copyright {
+    list-style: none;
+    justify-content: center;
+    padding-top: 1em;
+    margin: 0;
+    display: flex;
+    color: black;
+}
+.icons li {
+    margin: 0 1em;
+}
+.icons a{
+    color: white;
+    font-size: 2em;
+}
+.icons-twitter {
+    color: #1da1f2;
+
+}
+
+.icon-location {
+    color: #3498db;
+}
+
+.call-us {
+    color: #e74c3c;
+}
+
+.icons-twitter\.svg {
+    background-image: url("icons/twitter.svg");
+    background-size: cover;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    text-indent: -9999px;
+
+}
+.icons li:nth-child(1) a {
+  color: red;
+}
+.icon-location {
+    background-image: url("icons/location-arrow-solid.svg");
+    background-size: cover;
+    display: inline-block;
+    text-indent: -9999px;
+    height: 30px;
+    width: 25px;
+}
+.call-us {
+    background-image: url("icons/phone-volume-solid.svg");
+    background-size: cover;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    text-indent: -9999px;
+}
+.instagram {
+    background-image: url("icons/instagram.svg");
+    background-size: cover;
+    display: inline-block;
+    width: 23px;
+    height: 27px;
+    text-indent: -9999px;
+}
